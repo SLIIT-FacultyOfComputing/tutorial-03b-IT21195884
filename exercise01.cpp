@@ -13,7 +13,7 @@ int main()
 
   for(i=0; i<4 ; i++)
     {
-      cout<<"i         ";
+      cout << i         ;
     }
   
   cout<<endl;
@@ -22,14 +22,17 @@ int main()
     {
       cout<<"1234567890";
     }
+  cout << endl;
   
- cout << "No" << "Name" << "Marks" << endl;
+ cout << "No     " << "Name    " << "Marks    " << endl;
   
  for ( r = 0; r < 5; r++) 
  {
-     cout <<  r+1 
-          <<  names[r][20]
-          << marks[r] << endl;
+   cout << setiosflags(ios::fixed)
+     
+     cout <<  setw(5) << r+1 
+          <<  setw(20) << names[r][20]
+          << setw(30) << setprecision(2)<< marks[r] << endl;
  }
 
 return 0;
